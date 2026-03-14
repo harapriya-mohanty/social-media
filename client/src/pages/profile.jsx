@@ -1,11 +1,11 @@
 import React from 'react'
 
-const profile = () => {
+const Profile = () => {
   return (
-    <div>
-      
+    <div className='p-6'>
+      <h1>Profile</h1>
     </div>
   )
 }
 
-export default profile
+export default Profile

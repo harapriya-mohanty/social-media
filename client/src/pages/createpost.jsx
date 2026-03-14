@@ -1,11 +1,11 @@
 import React from 'react'
 
-const createpost = () => {
+const CreatePost = () => {
   return (
-    <div>
-      
+    <div className='p-6'>
+      <h1>Create Post</h1>
     </div>
   )
 }
 
-export default createpost
+export default CreatePost

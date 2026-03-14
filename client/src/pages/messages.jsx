@@ -1,11 +1,11 @@
 import React from 'react'
 
-const messages = () => {
+const Messages = () => {
   return (
-    <div>
-      
+    <div className='p-6'>
+      <h1>Messages</h1>
     </div>
   )
 }
 
-export default messages
+export default Messages

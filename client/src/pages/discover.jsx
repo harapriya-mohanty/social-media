@@ -1,11 +1,11 @@
 import React from 'react'
 
-const discover = () => {
+const Discover = () => {
   return (
-    <div>
-      
+    <div className='p-6'>
+      <h1>Discover</h1>
     </div>
   )
 }
 
-export default discover
+export default Discover
