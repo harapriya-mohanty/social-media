@@ -6,12 +6,22 @@ import { BrowserRouter } from 'react-router-dom'
 
 import { ClerkProvider } from '@clerk/react'
 
-createRoot(document.getElementById('root')).render(
+const clerkPublishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+
+const AppTree = (
   <StrictMode>
     <BrowserRouter>
-      <ClerkProvider>
-        <App />
-      </ClerkProvider>
+      <App />
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
+)
+
+createRoot(document.getElementById('root')).render(
+  clerkPublishableKey ? (
+    <ClerkProvider publishableKey={clerkPublishableKey}>
+      {AppTree}
+    </ClerkProvider>
+  ) : (
+    AppTree
+  )
 )
