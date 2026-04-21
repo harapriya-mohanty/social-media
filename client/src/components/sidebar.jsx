@@ -22,7 +22,7 @@ const Sidebar = ({ sidebarOpen , setSidebarOpen }) => {
         </Link>
       </div>
       {hasClerk ? (
-        <ClerkUserFooter user={user} />
+        <ClerkUserFooter />
       ) : (
         <GuestUserFooter user={user} />
       )}
@@ -31,7 +31,7 @@ const Sidebar = ({ sidebarOpen , setSidebarOpen }) => {
   )
 }
 
-const ClerkUserFooter = ({ user }) => {
+const ClerkUserFooter = () => {
   const { signOut } = useClerk()
   return (
     <div className='w-full border-t border-gray-200 p-4 px-7 flex items-center justify-between'>

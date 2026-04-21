@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Plus } from 'lucide-react'
 import { dummyStoriesData } from '../assets/assets'
 import moment from 'moment'
@@ -6,7 +6,7 @@ import StoryModel from './storyModel'
 import StoryViewer from './storyViewer'
 
 const StoriesBar = () => {
-    const [stories, setStories] = useState([])
+    const [stories, setStories] = useState(dummyStoriesData)
     const [showModel, setShowModel] = useState(false)
     const [viewStory, setViewStory] = useState(null)
 
@@ -17,10 +17,6 @@ const StoriesBar = () => {
     const handleAddStory = (newStory) => {
       setStories((prev) => [newStory, ...prev])
     }
-
-    useEffect(() => {
-        fetchStories()
-    }, [])
   return (
     <div className='w-screen sm:w-[calc(100vw-240px)] lg:max-w-2xl no-scrollbar overflow-x-auto px-4'>
       
@@ -100,7 +96,7 @@ const StoriesBar = () => {
           />
         )}
         {/* view story model */}
-        {viewStory && <StoryViewer viewStory={viewStory} setViewStory={setViewStory} />}
+        {viewStory && <StoryViewer key={viewStory?._id} viewStory={viewStory} setViewStory={setViewStory} />}
 
     </div>
   )

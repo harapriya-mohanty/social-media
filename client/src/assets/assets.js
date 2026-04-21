@@ -3,6 +3,10 @@ import sample_cover from './sample_cover.jpg'
 import sample_profile from './sample_profile.jpg'
 import bgImage from './bgImage.png'
 import group_users from './group_users.png'
+import user4 from './user4.jpg'
+import user5 from './user5.jpg'
+import user6 from './user6.jpg'
+import cover_photo from './cover.jpg'
 import { Home, MessageCircle, Search, UserIcon, Users } from 'lucide-react'
 import sponsored_img from './sponsored_img.png'
 
@@ -57,10 +61,34 @@ const dummyUser3Data = {
     profile_picture: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop",
 }
 
+const dummyUser4Data = {
+    ...dummyUserData,
+    _id: "user_4",
+    username: "john_warren",
+    full_name: "John Warren",
+    profile_picture: user4,
+}
+
+const dummyUser5Data = {
+    ...dummyUserData,
+    _id: "user_5",
+    username: "0livia_amelia",
+    full_name: "Olivia Amelia",
+    profile_picture: user5,
+}
+
+const dummyUser6Data = {
+    ...dummyUserData,
+    _id: "user_6",
+    username: "noah-liam",
+    full_name: "Noah Liam",
+    profile_picture: user6,
+}
+
 export const dummyStoriesData = [
     {
         "_id": "68833d466e4b42b685068860",
-        "user": dummyUserData,
+        "user": dummyUser3Data,
         "content": "📌 This isn't the story I wanted to tell… not yet. But if you're reading this, know that something interesting is in motion 🔄. The next post will make more sense 🧩.",
         "media_url": "",
         "media_type": "text",
@@ -70,7 +98,7 @@ export const dummyStoriesData = [
     },
     {
         "_id": "688340046e4b42b685068a73",
-        "user": dummyUserData,
+        "user": dummyUser2Data,
         "content": "",
         "media_url": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg",
         "media_type": "image",
@@ -90,7 +118,7 @@ export const dummyStoriesData = [
     },
     {
         "_id": "68833e136e4b42b685068937",
-        "user": dummyUserData,
+        "user": dummyUser5Data,
         "content": "",
         "media_url": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg",
         "media_type": "image",
@@ -100,7 +128,7 @@ export const dummyStoriesData = [
     },
     {
         "_id": "68833d706e4b42b685068875",
-        "user": dummyUserData,
+        "user": dummyUser3Data,
         "content": "🤫 Not every moment needs to be loud. Sometimes, the best things happen in silence — in drafts 📝, in progress 🧪, in planning 📊. That's where I am right now.",
         "media_url": "",
         "media_type": "text",
@@ -110,7 +138,7 @@ export const dummyStoriesData = [
     },
     {
         "_id": "68833c9e6e4b42b6850687e7",
-        "user": dummyUserData,
+        "user": dummyUser6Data,
         "content": "✨ Something meaningful is on the way. I'm working behind the scenes 🛠️ to bring it all together. This space is just the beginning 🌱. Stay tuned 👀.",
         "media_url": "",
         "media_type": "text",
@@ -124,7 +152,7 @@ export const dummyStoriesData = [
 export const dummyPostsData = [
     {
         "_id": "68773e977db16954a783839c",
-        "user": dummyUserData,
+        "user": dummyUser5Data,
         "content": "We're a small #team with a big vision — working day and night to turn dreams into products, and #products into something people love.",
         "image_urls": [
             "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg"
@@ -136,7 +164,7 @@ export const dummyPostsData = [
     },
     {
         "_id": "686e6d0407845749500c24cd",
-        "user": dummyUserData,
+        "user": dummyUser2Data,
         "content": "Unlock your potential—every small step counts. Stay consistent, stay focused, and trust the process. Growth takes time, but every day is a new chance to be better than yesterday. 🌱✨\r\n\r\n#Motivation #GrowthMindset #DailyInspiration #StayFocused #LevelUp #PositiveVibes #KeepGoing #SelfImprovement #MindsetMatters #SuccessJourney",
         "image_urls": [],
         "post_type": "text",
@@ -146,7 +174,7 @@ export const dummyPostsData = [
     },
     {
         "_id": "686e6b21de877d29cf02e2a7",
-        "user": dummyUserData,
+        "user": dummyUser3Data,
         "content": "This is a sample paragraph with some #hashtags like #socialmedia and #marketing. Let's find them!",
         "image_urls": [],
         "post_type": "text",
@@ -157,7 +185,7 @@ export const dummyPostsData = [
     {
         "_id": "686e3e47ba0cf0fecba19947",
         "user": dummyUserData,
-        "content": "",
+        "content": "To the attentive eye, each moment of the year has its own beauty.",
         "image_urls": [
             "https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg"
         ],
@@ -170,23 +198,23 @@ export const dummyPostsData = [
     },
     {
         "_id": "686e39e86e0585e9e2e58dd3",
-        "user": dummyUserData,
+        "user": dummyUser2Data,
         "content": "Finally , got the car !",
         "image_urls": [
             "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg"
         ],
         "post_type": "text_with_image",
-        "likes_count": [],
+        "likes_count": [8],
         "createdAt": "2025-07-09T09:44:08.626Z",
         "updatedAt": "2025-07-09T09:44:08.626Z",
     },
     {
         "_id": "686e361389841ba9f2633201",
-        "user": dummyUserData,
-        "content": "Hello, Everyone this is my first Post",
-        "image_urls": [],
+        "user": dummyUser6Data,
+        "content": "“I learn something every time I go into the mountains.” — Michael Kennedy\r\n\r\n#Mountains #NatureLovers #AdventureAwaits #OutdoorLife #ExploreMore #MountainVibes #NaturePhotography #GetOutside #Wanderlust #ScenicViews",
+        "image_urls": [cover_photo],
         "post_type": "text",
-        "likes_count": [],
+        "likes_count": [5],
         "createdAt": "2025-07-09T09:27:47.529Z",
         "updatedAt": "2025-07-09T09:27:47.529Z",
     }
@@ -197,7 +225,7 @@ export const dummyRecentMessagesData = [
         "_id": "68833af618623d2de81b5381",
         "from_user_id": dummyUser2Data,
         "to_user_id": dummyUserData,
-        "text": "I seen your profile",
+        "text": "I saw your profile",
         "message_type": "text",
         "media_url": "",
         "seen": true,
@@ -206,8 +234,8 @@ export const dummyRecentMessagesData = [
     },
     {
         "_id": "6878cc3c17a54e4d3748012f",
-        "from_user_id": dummyUserData,
-        "to_user_id": dummyUserData,
+        "from_user_id": dummyUser5Data,
+        "to_user_id": dummyUser5Data,
         "text": "This is a Samsung Tablet",
         "message_type": "text",
         "media_url": "",
@@ -276,21 +304,25 @@ export const dummyMessagesData = [
 ]
 
 export const dummyConnectionsData = [
-    dummyUserData,
     dummyUser2Data,
-    dummyUser3Data
+    dummyUser3Data,
+    dummyUser5Data,
+    dummyUser6Data
 ]
 
 export const dummyFollowersData = [
     dummyUser2Data,
-    dummyUser3Data
+    dummyUser3Data,
+    dummyUser5Data,
+    dummyUser6Data
 ]
 
 export const dummyFollowingData = [
     dummyUser2Data,
-    dummyUser3Data
+    dummyUser3Data,
+    dummyUser5Data
 ]
 
 export const dummyPendingConnectionsData = [
-    dummyUserData
+    dummyUser4Data
 ]

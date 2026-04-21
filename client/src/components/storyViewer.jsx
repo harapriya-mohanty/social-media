@@ -9,7 +9,6 @@ const StoryViewer = ({ viewStory, setViewStory }) => {
         let timer, progressInterval;
 
         if (viewStory && viewStory.media_type !== 'video') {
-            setProgress(0)
             const duration = 10000 // 10 seconds for non-video stories
             const setTime= 100;
             let elapsed = 0;
