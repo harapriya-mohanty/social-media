@@ -36,13 +36,13 @@ export const dummyUserData = {
     "profile_picture": sample_profile,
     "cover_photo": sample_cover,
     "location": "Odisha, India",
-    "followers": ["user_2", "user_3"],
-    "following": ["user_2", "user_3"],
-    "connections": ["user_2", "user_3"],
+    "followers": ["user_2", "user_3", "user_5", "user_6" ],
+    "following": ["user_2", "user_3", "user_5"],
+    "connections": ["user_2", "user_3", "user_5" ],
     "posts": [],
     "is_verified": true,
-    "createdAt": "2025-07-09T09:26:59.231Z",
-    "updatedAt": "2025-07-21T06:56:50.017Z",
+    "createdAt": "2026-04-20T09:26:59.231Z",
+    "updatedAt": "2026-04-20T09:26:59.231Z",
 }
 
 const dummyUser2Data = {
@@ -159,18 +159,18 @@ export const dummyPostsData = [
         ],
         "post_type": "text_with_image",
         "likes_count": [],
-        "createdAt": "2025-07-16T05:54:31.191Z",
-        "updatedAt": "2025-07-16T05:54:31.191Z",
+        "createdAt": "2026-04-21T05:54:31.191Z",
+        "updatedAt": "2026-04-15T08:13:18.111Z",
     },
     {
         "_id": "686e6d0407845749500c24cd",
-        "user": dummyUser2Data,
+        "user": dummyUser6Data,
         "content": "Unlock your potential—every small step counts. Stay consistent, stay focused, and trust the process. Growth takes time, but every day is a new chance to be better than yesterday. 🌱✨\r\n\r\n#Motivation #GrowthMindset #DailyInspiration #StayFocused #LevelUp #PositiveVibes #KeepGoing #SelfImprovement #MindsetMatters #SuccessJourney",
         "image_urls": [],
         "post_type": "text",
         "likes_count": [],
-        "createdAt": "2025-07-09T13:22:12.601Z",
-        "updatedAt": "2025-07-09T13:22:12.601Z",
+        "createdAt": "2026-04-20T05:54:31.191Z",
+        "updatedAt": "2026-04-20T05:54:31.191Z",
     },
     {
         "_id": "686e6b21de877d29cf02e2a7",
@@ -179,8 +179,8 @@ export const dummyPostsData = [
         "image_urls": [],
         "post_type": "text",
         "likes_count": [],
-        "createdAt": "2025-07-09T13:14:09.144Z",
-        "updatedAt": "2025-07-09T13:14:09.144Z",
+        "createdAt": "2026-04-20T05:54:31.191Z",
+        "updatedAt": "2026-04-20T05:54:31.191Z",
     },
     {
         "_id": "686e3e47ba0cf0fecba19947",
@@ -193,8 +193,8 @@ export const dummyPostsData = [
         "likes_count": [
             "user_2zdJbcAqiOX9jq2DIueBRQn0lMt"
         ],
-        "createdAt": "2025-07-09T10:02:47.213Z",
-        "updatedAt": "2025-07-09T10:09:37.075Z",
+        "createdAt": "2026-04-18T10:02:47.213Z",
+        "updatedAt": "2026-04-18T10:09:37.075Z",
     },
     {
         "_id": "686e39e86e0585e9e2e58dd3",
@@ -205,18 +205,18 @@ export const dummyPostsData = [
         ],
         "post_type": "text_with_image",
         "likes_count": [8],
-        "createdAt": "2025-07-09T09:44:08.626Z",
-        "updatedAt": "2025-07-09T09:44:08.626Z",
+        "createdAt": "2026-04-15T09:44:08.626Z",
+        "updatedAt": "2026-04-15T09:44:08.626Z",
     },
     {
         "_id": "686e361389841ba9f2633201",
-        "user": dummyUser6Data,
+        "user": dummyUserData,
         "content": "“I learn something every time I go into the mountains.” — Michael Kennedy\r\n\r\n#Mountains #NatureLovers #AdventureAwaits #OutdoorLife #ExploreMore #MountainVibes #NaturePhotography #GetOutside #Wanderlust #ScenicViews",
         "image_urls": [cover_photo],
         "post_type": "text",
         "likes_count": [5],
-        "createdAt": "2025-07-09T09:27:47.529Z",
-        "updatedAt": "2025-07-09T09:27:47.529Z",
+        "createdAt": "2026-04-09T09:27:47.529Z",
+        "updatedAt": "2026-04-09T09:27:47.529Z",
     }
 ]
 
