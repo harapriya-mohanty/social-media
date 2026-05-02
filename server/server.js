@@ -22,7 +22,7 @@ app.use("/api/user", userRouter);
 
 const PORT = process.env.PORT || 4000;
 
-if (!process.env.VERCEL) {
+if (!process.env.VERCEL !== "1") {
   app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 }
 
